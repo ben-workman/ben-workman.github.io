@@ -1,0 +1,94 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\definecolor{linkcolor}{HTML}{1A4F8B}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=linkcolor,
+  pdfauthor={Ben Workman},
+  pdftitle={Ben Workman: Curriculum Vitae},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={economics, labor economics, behavioral economics, machine learning},
+  pdfpagemode=UseNone
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\newlength{\cvlabelwidth}
+\setlength{\cvlabelwidth}{1.25in}
+
+\newenvironment{cvsection}[1]
+  {
+    \par\vspace{1.25em}
+    \noindent
+    \begin{minipage}[t]{\cvlabelwidth}
+      \raggedright\small\textbf{#1}
+    \end{minipage}%
+    \hspace{0.22in}%
+    \begin{minipage}[t]{\dimexpr\textwidth-\cvlabelwidth-0.22in\relax}
+  }
+  {
+    \end{minipage}
+    \par
+  }
+
+\newcommand{\entryspace}{\vspace{0.7em}}
+\newcommand{\datedentry}[2]{#1\hfill #2}
+
+\begin{document}
+
+{\LARGE\textbf{Ben Workman}}
+
+\begin{cvsection}{Contact Information}
+  Massachusetts Institute of Technology\\
+  Email: \href{mailto:benworkm@mit.edu}{benworkm@mit.edu}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \datedentry{\textbf{Massachusetts Institute of Technology}, Cambridge, MA}{2025--present}\\
+  PhD in Economics
+
+  \entryspace
+  \datedentry{\textbf{Harvard University}, Cambridge, MA}{2025}\\
+  A.B. in Economics, \textit{magna cum laude with Highest Honors in Economics}
+\end{cvsection}
+
+\begin{cvsection}{Working Papers}
+  \datedentry{\textbf{``Inside the Black Box: Using Machine Learning to Predict}}{August 2026}\\
+  \textbf{and Understand Effective Teaching}
+\end{cvsection}
+
+\begin{cvsection}{Other Writing}
+  \datedentry{\textbf{``Discrimination and Design: Equity in Digital Platforms''}}{2026}\\
+  With Michael Luca. Prepared for \textit{The Cambridge Handbook of the Business,
+  Economics, and Law of Digital Platforms}.
+\end{cvsection}
+
+\begin{cvsection}{Honors and Awards}
+  \datedentry{National Science Foundation Graduate Research Fellowship}{2025}\\
+  \datedentry{Thomas T. Hoopes Prize, Harvard University}{2025}\\
+  \datedentry{Harvard College Research Program Summer Research Grant}{2024}\\
+  \datedentry{College Fed Challenge National Championship}{2023}\\
+  \datedentry{Detur Book Prize, Harvard University}{2023}
+\end{cvsection}
+
+\begin{cvsection}{Professional Activities}
+  \textbf{Refereeing}\\
+  Quarterly Journal of Economics
+\end{cvsection}
+
+\vfill
+\begin{center}
+  \footnotesize\color{gray}Last updated: August 3, 2026
+\end{center}
+
+\end{document}

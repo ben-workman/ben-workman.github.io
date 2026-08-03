@@ -19,8 +19,7 @@ Then open [http://localhost:8000](http://localhost:8000). Stop the server with
 
 ### Email
 
-In `index.html`, replace `your-email@mit.edu` in both the `mailto:` link and
-the visible link text.
+The site currently uses `benworkm@mit.edu`.
 
 ### Photo
 
@@ -42,9 +41,12 @@ to "Ben Workman".
 
 ### CV
 
-Add the CV as `files/cv.pdf`, then change both instances of
-`href="files/cv.html"` in `index.html` to `href="files/cv.pdf"`. The placeholder
-`files/cv.html` can then be deleted.
+Edit the academic CV in `files/cv.tex`. Rebuild the linked PDF from the project
+root with:
+
+```bash
+latexmk -pdf -outdir=files files/cv.tex
+```
 
 ### Working papers
 
