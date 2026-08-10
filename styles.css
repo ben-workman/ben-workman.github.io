@@ -131,7 +131,7 @@ p {
   margin: 0 0 14px;
 }
 
-.lead {
+.bio p {
   font-size: 17px;
   line-height: 1.66;
 }
@@ -165,17 +165,6 @@ h2 {
 
 .paper-title-link {
   color: var(--link);
-}
-
-.pending-link {
-  cursor: default;
-  pointer-events: none;
-}
-
-.paper-meta {
-  margin: 0 0 9px;
-  color: var(--muted);
-  font-size: 14px;
 }
 
 details {
@@ -231,13 +220,6 @@ details p {
 
 .writing-entry {
   max-width: 650px;
-}
-
-.writing-entry .paper-meta {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.58;
 }
 
 .site-footer {
