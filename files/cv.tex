@@ -1,4 +1,4 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[sc,osf]{mathpazo}
@@ -21,6 +21,7 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+\linespread{1.02}
 \pagestyle{empty}
 
 \newlength{\cvlabelwidth}
@@ -28,20 +29,20 @@
 
 \newenvironment{cvsection}[1]
   {
-    \par\vspace{1.25em}
+    \par\vspace{1.55em}
     \noindent
     \begin{minipage}[t]{\cvlabelwidth}
-      \raggedright\small\textbf{#1}
+      \raggedright\normalsize\textbf{#1}
     \end{minipage}%
     \hspace{0.22in}%
-    \begin{minipage}[t]{\dimexpr\textwidth-\cvlabelwidth-0.22in\relax}
+    \begin{minipage}[t]{\dimexpr\textwidth-\cvlabelwidth-0.40in\relax}
   }
   {
     \end{minipage}
     \par
   }
 
-\newcommand{\entryspace}{\vspace{0.7em}}
+\newcommand{\entryspace}{\vspace{0.85em}}
 \newcommand{\datedentry}[2]{#1\hfill #2}
 
 \begin{document}
@@ -49,13 +50,14 @@
 {\LARGE\textbf{Ben Workman}}
 
 \begin{cvsection}{Contact Information}
-  Massachusetts Institute of Technology\\
-  Email: \href{mailto:benworkm@mit.edu}{benworkm@mit.edu}
+  Email: \href{mailto:benworkm@mit.edu}{benworkm@mit.edu}\\
+  Website: \href{https://ben-workman.github.io}{ben-workman.github.io}
 \end{cvsection}
 
 \begin{cvsection}{Education}
   \datedentry{\textbf{Massachusetts Institute of Technology}, Cambridge, MA}{2025--present}\\
-  PhD in Economics
+  PhD in Economics\\
+  Affiliate, \href{https://thebikeshop.io/}{The Bike Shop}
 
   \entryspace
   \datedentry{\textbf{Harvard University}, Cambridge, MA}{2025}\\
@@ -63,13 +65,13 @@
 \end{cvsection}
 
 \begin{cvsection}{Working Papers}
-  \datedentry{\textbf{``Inside the Black Box: Using Machine Learning to Predict}}{August 2026}\\
-  \textbf{and Understand Effective Teaching}
+  ``Inside the Black Box: Using Machine Learning to Predict and Understand
+  Effective Teaching.'' August 2026.
 \end{cvsection}
 
 \begin{cvsection}{Other Writing}
-  \datedentry{\textbf{``Discrimination and Design: Equity in Digital Platforms''}}{2026}\\
-  With Michael Luca. Prepared for \textit{The Cambridge Handbook of the Business,
+  ``Discrimination and Design: Equity in Digital Platforms'' (with Michael
+  Luca). February 2026. Prepared for \textit{The Cambridge Handbook of the Business,
   Economics, and Law of Digital Platforms}.
 \end{cvsection}
 
@@ -78,17 +80,16 @@
   \datedentry{Thomas T. Hoopes Prize, Harvard University}{2025}\\
   \datedentry{Harvard College Research Program Summer Research Grant}{2024}\\
   \datedentry{College Fed Challenge National Championship}{2023}\\
-  \datedentry{Detur Book Prize, Harvard University}{2023}
+  \datedentry{Detur Book Prize, Harvard University}{2023}\\
 \end{cvsection}
 
 \begin{cvsection}{Professional Activities}
-  \textbf{Refereeing}\\
-  Quarterly Journal of Economics
+  Refereeing: \textit{Quarterly Journal of Economics}
 \end{cvsection}
 
 \vfill
 \begin{center}
-  \footnotesize\color{gray}Last updated: August 3, 2026
+  \footnotesize\color{gray}Last updated: August 10, 2026
 \end{center}
 
 \end{document}

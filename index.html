@@ -7,8 +7,9 @@
       name="description"
       content="Ben Workman is a PhD student in economics at MIT."
     />
-    <title>Ben Workman | Economics PhD Student</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Ben Workman</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <main id="top" class="layout">
@@ -16,23 +17,50 @@
         <h1 id="profile-heading">Ben Workman</h1>
         <figure class="portrait">
           <img
-            src="assets/profile-placeholder.svg"
-            alt="Placeholder portrait for Ben Workman"
-            width="640"
-            height="800"
+            src="assets/ben-workman.png"
+            alt="Ben Workman"
+            width="400"
+            height="400"
           />
         </figure>
+
         <nav class="profile-links" aria-label="Contact links">
-          <a href="files/cv.pdf">CV</a>
-          <a href="mailto:benworkm@mit.edu">benworkm@mit.edu</a>
+          <a href="files/cv.pdf" class="contact-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+              />
+            </svg>
+            <span>CV</span>
+          </a>
+          <a href="mailto:benworkm@mit.edu" class="contact-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <span>benworkm@mit.edu</span>
+          </a>
         </nav>
       </aside>
 
       <div class="content">
         <section class="bio" aria-label="Biography">
-          <p>
-            I am a second-year PhD student in economics at MIT, where I am an
-            affiliate of the
+          <p class="lead">
+            I am a second-year PhD student in economics at MIT, where I am an NSF
+            Graduate Research Fellow and an affiliate of the
             <a href="https://thebikeshop.io/">Bike Shop</a>. I am interested in
             behavioral and labor economics, as well as applications of machine
             learning to economics.
@@ -45,20 +73,37 @@
 
         <section id="research" class="content-section" aria-labelledby="research-heading">
           <h2 id="research-heading">Working Papers</h2>
-          <p class="empty-state">Working papers will be added here.</p>
-
-          <!--
-            To add a paper, remove the empty-state above and copy this article:
-
-            <article class="paper">
-              <h3><a href="papers/your-paper.pdf">Your Paper Title</a></h3>
-              <p class="paper-meta">With Coauthor Name</p>
-              <details>
-                <summary>Abstract</summary>
-                <p>Your abstract goes here.</p>
-              </details>
-            </article>
-          -->
+          <article class="paper">
+            <h3 class="paper-citation">
+              <a
+                class="paper-title-link"
+                href="papers/inside-the-black-box.pdf"
+                target="_blank"
+                rel="noopener"
+                >Inside the Black Box: Using Machine Learning to Predict and
+                Understand Effective Teaching</a
+              >. August 2026.
+            </h3>
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                This paper applies machine learning techniques to classroom
+                transcripts of mathematics instruction to predict and
+                understand teacher value-added. Using data from approximately
+                300 U.S. elementary school teachers, I show that transcript
+                embeddings predict value-added better than observable teacher
+                characteristics, including classroom observation scores,
+                explaining an order of magnitude more out-of-sample variation.
+                I present evidence suggesting these predictions could improve
+                personnel decisions and student outcomes. I then identify
+                specific instructional features associated with value-added,
+                such as the use of student teamwork. Finally, I examine human
+                evaluators’ predictions of value-added and find suggestive
+                evidence of errors in their weighting of instructional
+                practices.
+              </p>
+            </details>
+          </article>
         </section>
 
         <!-- Remove the hidden attribute when you are ready to use this section. -->
@@ -66,15 +111,29 @@
           <h2 id="publications-heading">Publications</h2>
         </section>
 
-        <!-- Remove the hidden attribute when you are ready to use this section. -->
-        <section class="content-section" aria-labelledby="writing-heading" hidden>
+        <section class="content-section" aria-labelledby="writing-heading">
           <h2 id="writing-heading">Other Writing</h2>
+          <article class="writing-entry">
+            <h3 class="paper-citation">
+              <a
+                class="paper-title-link"
+                href="papers/discrimination-and-design.pdf"
+                target="_blank"
+                rel="noopener"
+                >Discrimination and Design: Equity in Digital Platforms</a
+              >, with
+              <a href="https://carey.jhu.edu/faculty/faculty-directory/michael-luca-phd"
+                >Michael Luca</a
+              >. February 2026. Prepared for
+              <em>The Cambridge Handbook of the Business, Economics, and Law of
+                Digital Platforms</em>.
+            </h3>
+          </article>
         </section>
-
-        <footer>
-          <p>Last updated August 2026.</p>
-        </footer>
       </div>
     </main>
+    <footer class="site-footer">
+      <p>© 2026 Ben Workman</p>
+    </footer>
   </body>
 </html>
